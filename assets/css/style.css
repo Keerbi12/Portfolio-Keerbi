@@ -1,0 +1,32 @@
+/*Universal selector for applying styles to all elements.*/
+* {
+    font-size: 16px;
+}
+/*Setting font size for all major headings as a percentage.*/
+header h1 {
+    font-size: 200%;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+   padding: 30px; 
+   font-family: 'Comic Sans';
+   background-color: lightblue;
+   color: white;
+}
+
+header nav {
+    font-family: "Comic Sans";
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
