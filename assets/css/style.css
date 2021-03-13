@@ -1,6 +1,7 @@
 /*Universal selector for applying styles to all elements.*/
 * {
     box-sizing: border-box;
+    font-family: "sans-serif", "trebuchet MS";
     margin: 0px;
     padding: 0px;
     font-size: 16px;
@@ -8,7 +9,7 @@
 /*Setting font size for all major headings as a percentage.*/
 
 body {
-    font-family: "sans-serif";
+    font-family: "sans-serif", "trebuchet MS";
     background-color: white;
 }
 
@@ -72,14 +73,14 @@ header nav ul li a:hover {
     width: 100%;
     display: flex;
 }
-
+/*Added banner image, scaled object.*/
 .banner image {
     width: 100%;
     max-height: 200px;
     object-fit:fill;
     display: block;
 }
-
+/*Added left section for titles.*/
 .leftSide {
     display: flexbox;
     float: left;
@@ -87,16 +88,33 @@ header nav ul li a:hover {
 }
 
 .sectionTitle h2 {
+    color: grey;
     font-size: 300%;
     padding-bottom: 200px;
     padding-right: 20px;
     float: right;
-    border-right: 5px black solid;
+    border-right: 5px grey solid;
 }
+/*Added right section for contents.*/
+.rightSide {
+    display: flexbox;
+    float: left;
+    margin: 30px;
+}
+
+.aboutMe {
+    padding-bottom: 232px;
+}
+
 /*Added work section, created individual boxes for links*/
 @media(min-width:768px){
     .work {
         display: inline-flex;
+    }
+
+    .work div h3{
+        font-size: 150%;
+        color: grey;
     }
     
     .work div{
@@ -105,19 +123,7 @@ header nav ul li a:hover {
         padding: 30px;
     }
     
-    .box1 {
-        flex: 1;
-    }
-    .box2 {
-        flex: 1;
-    }
-    .box3 {
-        flex: 1;
-    }
-    .box4 {
-        flex: 1;
-    }
-    .box5 {
+    .box {
         flex: 1;
     }
 }
