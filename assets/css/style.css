@@ -9,7 +9,7 @@
 
 body {
     font-family: "sans-serif";
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 header { 
@@ -29,6 +29,7 @@ header h1 {
     font-family: "sans serif", "trebuchet MS";
     font-size: 300%;
 }
+
 header .logo {
     display: inline-flex;
     align-items: center;
@@ -79,7 +80,19 @@ header nav ul li a:hover {
     display: block;
 }
 
+.leftSide {
+    display: flexbox;
+    float: left;
+    margin: 30px;
+}
 
+.sectionTitle h2 {
+    font-size: 300%;
+    padding-bottom: 200px;
+    padding-right: 20px;
+    float: right;
+    border-right: 5px black solid;
+}
 /*Added work section, created individual boxes for links*/
 @media(min-width:768px){
     .work {
