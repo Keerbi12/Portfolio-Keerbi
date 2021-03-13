@@ -16,21 +16,31 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 20px 5%;
+   padding: 0px 0px;
    background-color: grey;
    color: white;
 }
 
 header h1 {
-    margin: 0px;
+    margin-top: 0px;
     padding: 0px;
     display: block;
     font-family: "sans serif", "trebuchet MS";
     font-size: 300%;
 }
+header .logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.me {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+}
 
 header nav {
-    margin-top: 0px;
+    margin-right: 5%;
     float: right;
     font-family: "sans serif", "trebuchet MS";
 }
@@ -56,15 +66,6 @@ header nav ul li a:hover {
 }
 
 /*Added work section, created individual boxes for links*/
-.face {
-    height: 100px;
-    background-color: red;
-}
-.me {
-    width: 100px;
-    height: 100px;
-    object-fit: scale-down;
-}
 @media(min-width:768px){
     .work {
         display: inline-flex;
