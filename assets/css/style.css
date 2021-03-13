@@ -74,7 +74,7 @@ header nav ul li a:hover {
     display: flex;
 }
 /*Added banner image, scaled object.*/
-.banner image {
+.bannerImage {
     width: 100%;
     max-height: 200px;
     object-fit:fill;
@@ -105,25 +105,52 @@ header nav ul li a:hover {
 .aboutMe {
     padding-bottom: 232px;
 }
-
 /*Added work section, created individual boxes for links*/
-@media(min-width:768px){
-    .work {
-        display: inline-flex;
-    }
+.work {
+    display: inline-flex;
+    max-height: 50px;
+    padding-bottom: 260px;
+}
 
-    .work div h3{
-        font-size: 150%;
-        color: grey;
-    }
-    
-    .work div{
-        border: 2px black solid;
-        margin: 10px;
-        padding: 30px;
-    }
-    
-    .box {
-        flex: 1;
-    }
+.codeRefractor {
+    display: flexbox;
+    object-fit:scale-down;
+    max-width: 50px;
+}
+
+.work div h3{
+    font-size: 150%;
+    color: grey;
+}
+
+.work div{
+    display: block;
+    border: 2px black solid;
+    margin: 10px;
+    padding: 50px;
+}
+main .work .box a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+main .work .box a:hover {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.box {
+    display: flex;
+    color: white;
+    background-image: -moz-element();
+    position: relative;
+    background-color: grey;
+}
+
+.contactMe {
+}
+
+.resume {
+    padding-top: 232px;
 }
