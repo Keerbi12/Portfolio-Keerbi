@@ -1,4 +1,8 @@
 /*Universal selector for applying styles to all elements.*/
+:root {
+    --fontStyle: font-family: "sans-serif", "trebuchet MS";  ;
+}
+
 * {
     box-sizing: border-box;
     font-family: "sans-serif", "trebuchet MS";
@@ -11,6 +15,10 @@
 body {
     font-family: "sans-serif", "trebuchet MS";
     background-color: white;
+}
+
+.headerContainer {
+    position: fixed;
 }
 
 header { 
