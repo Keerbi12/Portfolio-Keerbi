@@ -90,13 +90,13 @@ header nav ul li a:hover {
     display: block;
 }
 /*Grid which conatins all the elements of the page*/
-.gridContainer {
+.aboutMeContainer {
     display: grid;
     grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
     grid-template-rows: auto auto;
 }
 /*em based off size of section title*/
-.gridContainer div {
+.aboutMeContainer div {
     background-color: #eee;
     padding: 1em;
     margin: 20px;
