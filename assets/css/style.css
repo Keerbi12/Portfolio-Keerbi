@@ -93,23 +93,16 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
     grid-template-rows: auto auto;
-    back
 }
 
 .gridContainer div {
     background-color: #eee;
     padding: 1em;
     margin: 1em;
+    padding: 1em;
 }
 
-.gridContainer div:nth-child(odd) {
-    background-color: #ddd;
-}
-
-.aboutMe11 {
-}
-
-.aboutMe1 {
+.aboutMeDescription {
     grid-column: span 3;
 }
 
@@ -117,22 +110,11 @@ header nav ul li a:hover {
     grid-row: span 2;
 }
 
-.works1 {
-
-}
-
-.contactMe11 {
-}
-
-.contactMe1 {
+.contactMeDescription {
     grid-column: span 3;
 }
 
-
-.resume11 {
-}
-
-.resume1 {
+.resumeDescription {
     grid-column: span 3;
 }
 
@@ -208,9 +190,6 @@ main .work .box a:hover {
     background-image: -moz-element();
     position: relative;
     background-color: grey;
-}
-
-.contactMe {
 }
 
 .resume {
