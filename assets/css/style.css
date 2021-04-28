@@ -88,11 +88,65 @@ header nav ul li a:hover {
     object-fit:fill;
     display: block;
 }
+/*Grid which conatins all the elements of the page*/
+.gridContainer {
+    display: grid;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    grid-template-rows: auto auto;
+    back
+}
+
+.gridContainer div {
+    background-color: #eee;
+    padding: 1em;
+    margin: 1em;
+}
+
+.gridContainer div:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.aboutMe11 {
+}
+
+.aboutMe1 {
+    grid-column: span 3;
+}
+
+#works {
+    grid-row: span 2;
+}
+
+.works1 {
+
+}
+
+.contactMe11 {
+}
+
+.contactMe1 {
+    grid-column: span 3;
+}
+
+
+.resume11 {
+}
+
+.resume1 {
+    grid-column: span 3;
+}
+
 /*Added left section for titles.*/
 .leftSide {
     display: flexbox;
     float: left;
     margin: 30px;
+}
+
+.sectionTitle {
+    color: grey;
+    font-size: 300%;
+    float: right;
 }
 
 .sectionTitle h2 {
