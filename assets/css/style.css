@@ -9,6 +9,7 @@
     margin: 0px;
     padding: 0px;
     font-size: 16px;
+    color: grey;
 }
 /* ========== Setting font size for all major headings as a percentage. ========== */
 
@@ -19,6 +20,7 @@ body {
 /* ========== Fixed the position of the header ========== */
 .headerContainer {
     position: fixed;
+    max-height: 120px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -27,9 +29,11 @@ body {
     background-color: rgba(0,0,0,0.5);
     backdrop-filter: blur(5px);
     color: white;
+    z-index: 1000;
 }
 
 .headerTitle {
+    color: white;
     display: block;
     font-size: 300%;
     padding: 20px;
@@ -103,38 +107,95 @@ header nav ul li a:hover {
 }
 
 .sectionTitle {
+    position: relative;
     color: grey;
     font-size: 300%;
     text-align: left;
+    z-index: -1;
 }
 
-.aboutMeDescription {
+/* Theses are the spans that help me to link with the nav bar, compressed it since it is repetitive */
+#aboutMe {position:absolute;top:-120px;}
+#works {position:absolute;top:-120px;}
+#contactMe {position:absolute;top:-120px;}
+#resume {position:absolute;top:-120px;}
+
+.linkTitle {
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+}
+
+.linkTitle:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+#aboutMeDescription {
     grid-column: span 3;
 }
 
-#works {
+#worksTitle {
     grid-row: span 2;
 }
 
-#imagePasswordGenerator {
-    max-width: 100px;
-    max-height: 100px;
-    object-fit: scale-down;
+.worksDescription {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.contactMeDescription {
+#imagePasswordGenerator, #imageseo {
+    border-radius: 1em;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#imagePasswordGenerator:hover, #imageseo:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 100ms;
+    border: solid rgba(0, 0, 0, 0.5);
+}
+
+
+#imageResume {
+    display: none;
+    max-width: 80%;
+    max-height: 80%;
+    object-fit:scale-down;
+}
+
+#imageResume:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 100ms;
+}
+
+.worksText {
+    text-decoration: none;
+}
+
+#worksText {
+    color: grey;
+    font-size: 150%;
+    padding: 20px;
+}
+
+#worksText:hover {
+    color: rgba(0,0,0,1);
+    cursor: pointer;
+    transform: scale(1.03);
+
+}
+
+#contactMeDescription {
     grid-column: span 3;
 }
 
 .resumeDescription {
     grid-column: span 3;
-}
-
-/*Added left section for titles.*/
-.leftSide {
-    display: flexbox;
-    float: left;
-    margin: 30px;
 }
 
 .sectionTitle h2 {
@@ -151,15 +212,17 @@ header nav ul li a:hover {
     height: 1000px;
 }
 
-@media all and (max-width: 500px ) {
+@media all and (max-width: 700px ) {
     .logo {
         position: absolute;
         display: none;
     }
 
-    header nav ul li {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        padding: 0px 20px;
+    header nav ul li a {
+        display: flex;
+        flex-flow: column;
+        margin: auto;
+        padding: auto;
+        font-size: 100%;
     }
 }
