@@ -145,20 +145,37 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-#imagePasswordGenerator, #imageseo {
+#worksDescriptionGroup {
+    grid-column: span 2;
+}
+
+#imagePasswordGenerator, #imageSeo, #imagePopQuiz {
     border-radius: 1em;
     max-width: 300px;
     height: 300px;
     object-fit: cover;
 }
 
-#imagePasswordGenerator:hover, #imageseo:hover {
+#imageGroup1 {
+    border-radius: 1em;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#imagePasswordGenerator:hover, #imageSeo:hover, #imagePopQuiz:hover {
     cursor: pointer;
     transform: scale(1.03);
     transition: 100ms;
     border: solid rgba(0, 0, 0, 0.5);
 }
 
+#imageGroup1:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 100ms;
+    border: solid rgba(0, 0, 0, 0.5);
+}
 
 #imageResume {
     display: none;
@@ -194,6 +211,12 @@ header nav ul li a:hover {
     grid-column: span 3;
 }
 
+.contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em;
+}
+
 .resumeDescription {
     grid-column: span 3;
 }
@@ -225,4 +248,15 @@ header nav ul li a:hover {
         padding: auto;
         font-size: 100%;
     }
+
+    .bodyText {
+        font-size: auto;
+    }
+
+    .sectionTitle {
+        font-size: auto;
+        color: red;
+    }
+
+    
 }
